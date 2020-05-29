@@ -16,12 +16,17 @@ class LoginActivity : AppCompatActivity() {
 
         supportActionBar?.hide()
 
+        //Chama a activity de cadastro
         button_sign_in.setOnClickListener {
             startActivity(Intent(applicationContext,SignInActivity::class.java))
         }
+
+        //Chama a activity de login com conta google
         button_google.setOnClickListener {
 
         }
+
+        //Chama a activity de login local
         button_login.setOnClickListener {
             startActivity(Intent(applicationContext,SignUpActivity::class.java))
         }

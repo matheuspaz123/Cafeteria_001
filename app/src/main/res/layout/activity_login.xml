@@ -21,7 +21,7 @@
         android:id="@+id/button_sign_in"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="@drawable/custom_button_marrom"
+        android:background="@drawable/custom_button_marron"
         android:text="Registrar"
         android:textColor="@color/white"
         app:layout_constraintHorizontal_chainStyle="spread"
@@ -42,8 +42,8 @@
 
     <ImageView
         android:id="@+id/ic_google"
-        android:layout_width="49dp"
-        android:layout_height="51dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:src="@drawable/ic_google"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -55,7 +55,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:background="@drawable/custom_button_white_blue"
+        android:background="@drawable/custom_button_google"
         android:paddingHorizontal="32dp"
         android:text="Entre com sua conta google"
         android:textColor="@color/blue"
