@@ -10,7 +10,8 @@ import kotlinx.coroutines.delay
 //tela de apresentação
 class SplashActivity : AppCompatActivity() {
 
-    var validator = 0
+    private var validator = 0
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
@@ -40,8 +41,8 @@ class SplashActivity : AppCompatActivity() {
             validator = 1
 
         }else{
+            //Se o usuario clicar para voltar, a tela não volta para esta, ela finaliza
             finish()
-            //startActivity(Intent(applicationContext, LoginActivity::class.java))
         }
     }
 

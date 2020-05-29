@@ -18,7 +18,7 @@
         app:srcCompat="@drawable/coffee_shop" />
 
     <Button
-        android:id="@+id/button_registrar"
+        android:id="@+id/button_sign_in"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@drawable/custom_button_marrom"
@@ -36,9 +36,9 @@
         android:background="@drawable/custom_button_white"
         android:text="Login"
         android:textColor="@color/font_marron_claro"
-        app:layout_constraintLeft_toRightOf="@id/button_registrar"
+        app:layout_constraintLeft_toRightOf="@id/button_sign_in"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/button_registrar" />
+        app:layout_constraintTop_toTopOf="@+id/button_sign_in" />
 
     <ImageView
         android:id="@+id/ic_google"
