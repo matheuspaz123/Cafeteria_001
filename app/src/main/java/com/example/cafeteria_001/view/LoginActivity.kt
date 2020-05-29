@@ -11,8 +11,8 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        findViewById<ImageView>(R.id.testando).apply {
-            setImageResource(R.drawable.coffee_shop_background)
-        }
+        supportActionBar?.hide()
+
+
     }
 }
