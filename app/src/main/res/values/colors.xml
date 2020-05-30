@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- cores para a bara de tarefas (aonde fica o sinal do wifi e sinal do chip) !-->
     <color name="colorPrimary">#320C00</color>
     <color name="colorPrimaryDark">#350E02</color>
-    <color name="blue">#0019A5</color>
+
+    <!-- cores do sistema, não sei para que serve !-->
     <color name="colorAccent">#03DAC5</color>
+
+    <!-- cores das telas !-->
     <color name="splash_marron">#957F61</color>
-    <color name="splash_font">#000000</color>
-    <color name="marron_normal">#D2B48C</color>
+    <color name="marron_tela">#D2B48C</color>
+
+
+    <!-- cores dos textos !-->
+    <color name="font_splash">#000000</color><!-- !-->
     <color name="font_marron">#251913</color>
     <color name="font_marron_claro">#B2302119</color>
-    <color name="white">#ffff</color>
+    <color name="font_white">#ffff</color>
+    <color name="font_blue">#0019A5</color>
+
 </resources>

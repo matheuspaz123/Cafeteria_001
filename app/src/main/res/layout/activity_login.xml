@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/marron_normal"
+    android:background="@color/marron_tela"
     tools:context=".view.LoginActivity">
 
     <ImageView
@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/custom_button_marron"
         android:text="Registrar"
-        android:textColor="@color/white"
+        android:textColor="@color/font_white"
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@id/button_login"
@@ -58,7 +58,7 @@
         android:background="@drawable/custom_button_google"
         android:paddingHorizontal="32dp"
         android:text="Entre com sua conta google"
-        android:textColor="@color/blue"
+        android:textColor="@color/font_blue"
         app:layout_constraintLeft_toRightOf="@+id/ic_google"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/button_login" />
