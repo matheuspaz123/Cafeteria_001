@@ -4,8 +4,8 @@
     <color name="colorPrimary">#320C00</color>
     <color name="colorPrimaryDark">#350E02</color>
 
-    <!-- cores do sistema, não sei para que serve !-->
-    <color name="colorAccent">#03DAC5</color>
+    <!-- cores do sistema, exemplo, quando clica para difitar em um editText aparece esta cor em vaixo !-->
+    <color name="colorAccent">#371D16</color>
 
     <!-- cores das telas !-->
     <color name="splash_marron">#957F61</color>
