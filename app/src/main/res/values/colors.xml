@@ -18,5 +18,6 @@
     <color name="font_marron_claro">#B2302119</color>
     <color name="font_white">#ffff</color>
     <color name="font_blue">#0019A5</color>
+    <color name="font_activity">#ECE8E8</color>
 
 </resources>

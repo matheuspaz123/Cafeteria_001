@@ -21,23 +21,23 @@
         android:id="@+id/button_sign_in"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="@drawable/custom_button_marron"
-        android:text="Registrar"
-        android:textColor="@color/font_white"
+        android:background="@drawable/custom_button_white"
+        android:text="Login"
+        android:textColor="@color/font_marron_claro"
         app:layout_constraintHorizontal_chainStyle="spread"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@id/button_login"
+        app:layout_constraintLeft_toRightOf="@+id/button_login"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/coffee_shop" />
 
     <Button
         android:id="@+id/button_login"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="@drawable/custom_button_white"
-        android:text="Login"
-        android:textColor="@color/font_marron_claro"
-        app:layout_constraintLeft_toRightOf="@id/button_sign_in"
-        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/custom_button_marron"
+        android:text="Registrar"
+        android:textColor="@color/font_white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/button_sign_in"
         app:layout_constraintTop_toTopOf="@+id/button_sign_in" />
 
     <ImageView
