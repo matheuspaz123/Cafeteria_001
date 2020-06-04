@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/font_activity"
-    tools:context=".view.SignInActivity">
+    tools:context=".view.SignUpActivity">
 
     <View
         android:id="@+id/view_board"
@@ -54,7 +53,7 @@
                 android:id="@+id/text_sign_up_cpf"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="32dp"
                 android:hint="CPF:"
                 android:inputType="number"
                 app:layout_constraintLeft_toLeftOf="parent"
@@ -65,28 +64,82 @@
                 android:id="@+id/text_sign_up_cep"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="32dp"
                 android:hint="CEP:"
-                android:inputType="text"
+                android:inputType="number"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/button_sign_up_atualization"
                 app:layout_constraintTop_toBottomOf="@+id/text_sign_up_cpf" />
+
+            <Button
+                android:id="@+id/button_sign_up_atualization"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/custom_button_marron"
+                android:paddingHorizontal="20dp"
+                android:text="Atualizar Cep"
+                android:textColor="@color/font_white"
+
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintLeft_toRightOf="@id/text_sign_up_cep"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/text_sign_up_cep" />
+
+            <TextView
+                android:id="@+id/text_view_sign_up_localidade"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/shape_custom_button_white"
+                android:hint="Cidade"
+                android:padding="12dp"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/text_view_sign_up_uf"
+                app:layout_constraintTop_toBottomOf="@+id/text_sign_up_cep" />
+
+            <TextView
+                android:id="@+id/text_view_sign_up_uf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_custom_button_white"
+                android:hint="Estado"
+                android:padding="12dp"
+                android:textSize="18sp"
+                app:layout_constraintStart_toEndOf="@+id/text_view_sign_up_localidade"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/text_view_sign_up_localidade" />
+
+            <TextView
+                android:id="@+id/text_view_sign_up_logradouro"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_custom_button_white"
+                android:hint="Endereço"
+                android:padding="12dp"
+                android:layout_marginTop="8dp"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_view_sign_up_localidade" />
             <EditText
                 android:id="@+id/text_sign_up_phone"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="32dp"
                 android:hint="Telefone:"
                 android:inputType="phone"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/text_sign_up_cep" />
+                app:layout_constraintTop_toBottomOf="@+id/text_view_sign_up_logradouro" />
 
             <EditText
                 android:id="@+id/text_sign_up_email"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="32dp"
                 android:hint="E-Mail:"
                 android:inputType="textEmailAddress"
                 app:layout_constraintLeft_toLeftOf="parent"
@@ -97,7 +150,7 @@
                 android:id="@+id/checkbox_sign_up"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="32dp"
                 android:text="Li e concordo com os termos e condições"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/text_sign_up_email" />
