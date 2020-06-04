@@ -25,11 +25,14 @@ class SignUpActivity : AppCompatActivity() {
 
         val mViewModel = ViewModelProvider(this).get(SignUpViewModel::class.java)
 
+
+        //botão para obter endereço pelo CEP
         button_sign_up_atualization.setOnClickListener {
             bindCep()
         }
     }
 
+    //faz a busca e o binding dos dados com as views
     fun bindCep() {
         val cep = text_sign_up_cep.text.toString()
         if (cep.length == 8) {
@@ -46,6 +49,7 @@ class SignUpActivity : AppCompatActivity() {
                     text_view_sign_up_localidade.text = aux?.localidade
                     text_view_sign_up_uf.text = aux?.uf
                     text_view_sign_up_logradouro.text = aux?.logradouro
+                    text_view_sign_up_bairro.text = aux?.bairro
                 }
             })
         }else{
