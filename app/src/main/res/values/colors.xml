@@ -11,6 +11,7 @@
     <color name="splash_marron">#957F61</color>
     <color name="marron_tela">#D2B48C</color>
 
+    <!-- cores padrão para vetores cafe #865F2D !-->
 
     <!-- cores dos textos !-->
     <color name="font_splash">#000000</color><!-- !-->
@@ -19,5 +20,7 @@
     <color name="font_white">#ffff</color>
     <color name="font_blue">#0019A5</color>
     <color name="font_activity">#ECE8E8</color>
+    <color name="font_separation_bar">#CDCBCB</color>
+
 
 </resources>
