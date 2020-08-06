@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="280dp"
         android:fontFamily="@font/allura"
-        android:text="Coffee Shop "
+        android:text="@string/coffee_shop"
         android:textSize="64sp"
         android:textStyle="italic"
         android:textColor="@color/font_splash"
