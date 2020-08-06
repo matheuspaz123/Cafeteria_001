@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/icone_cooffee"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".view.ProductMenuActivity"></activity>
+        <activity android:name=".teste"></activity>
+        <activity android:name=".view.ProductMenuActivity" />
         <activity android:name=".view.SignUpActivity" />
         <activity android:name=".view.SignInActivity" />
         <activity android:name=".view.LoginActivity" />
