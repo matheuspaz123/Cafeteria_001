@@ -28,4 +28,8 @@
     <string name="aceito_termos">Li e concordo com os termos e condições</string>
     <string name="entrar_com_conta_google">Entrar com conta Google</string>
     <string name="coffee_shop">Coffee Shop</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 </resources>

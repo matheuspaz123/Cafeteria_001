@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_menu_button_navigation_graph"
+    app:startDestination="@id/navigation_home">
+
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.cafeteria_001.ui_button_navigation.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/home_fragment" />
+    <fragment
+        android:id="@+id/navigation_location"
+        android:name="com.example.cafeteria_001.ui_button_navigation.LocationFragment"
+        android:label="Location"
+        tools:layout="@layout/location_fragment" />
+    <fragment
+        android:id="@+id/navigation_preferences"
+        android:name="com.example.cafeteria_001.ui_button_navigation.PreferencesFragment"
+        android:label="Preferences"
+        tools:layout="@layout/preferences_fragment" />
+    <fragment
+        android:id="@+id/navigation_user"
+        android:name="com.example.cafeteria_001.ui_button_navigation.UserFragment"
+        android:label="User"
+        tools:layout="@layout/user_fragment" />
+</navigation>
