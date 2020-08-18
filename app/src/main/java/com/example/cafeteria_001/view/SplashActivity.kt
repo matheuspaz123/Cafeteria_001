@@ -15,5 +15,10 @@ class SplashActivity : AppCompatActivity() {
         supportActionBar?.hide()
     }
 
+    override fun onPause() {
+        super.onPause()
+        finish()
+    }
+
 
 }
