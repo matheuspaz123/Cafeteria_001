@@ -16,7 +16,7 @@
     <string name="esqueceu_sua_senha">Esqueceu sua senha ?</string>
     <string name="entrar">Entrar</string>
     <string name="n_o_tem_uma_conta">Não tem uma conta?</string>
-    <string name="registre_ser">Registre-se,</string>
+    <string name="registre_se">Registre-se,</string>
     <string name="fa_a_o_seu_cadastro">Faça o seu Cadastro</string>
     <string name="nome">Nome:</string>
     <string name="cpf">CPF:</string>
@@ -32,4 +32,9 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="expresso_tag_button">Expresso</string>
+    <string name="cappuccino_tag_button">Cappuccino</string>
+    <string name="macciato_tag_button">Macciato</string>
+    <string name="moccha_tag_button">Moccha</string>
+    <string name="latte_tag_button">Latte</string>
 </resources>

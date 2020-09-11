@@ -96,7 +96,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
                 android:layout_marginTop="16dp"
-                android:text="@string/registre_ser"
+                android:text="@string/registre_se"
                 android:textColor="@color/font_marron"
                 android:textSize="16sp"
                 android:textStyle="bold"

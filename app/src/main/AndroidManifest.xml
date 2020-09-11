@@ -12,7 +12,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".view.MenuButtonNavigation" />
-        <activity android:name=".view.ProductMenuActivity" />
         <activity android:name=".view.SignUpActivity" />
         <activity android:name=".view.SignInActivity" />
         <activity android:name=".view.LoginActivity" />

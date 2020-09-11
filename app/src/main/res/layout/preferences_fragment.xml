@@ -1,265 +1,136 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui_button_navigation.PreferencesFragment">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        >
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/layout_scrooll"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <View
-                android:id="@+id/view__line_first"
+                android:id="@+id/view__line_1"
                 android:layout_width="0dp"
                 android:layout_height="4dp"
                 android:background="@color/font_separation_bar"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-
-            <ImageView
-                android:layout_marginTop="10dp"
-                android:id="@+id/image_product_espresso"
-                android:layout_width="72dp"
-                android:layout_height="72dp"
-                android:layout_marginStart="32dp"
-                android:src="@drawable/ic_coffee_cup_espresso"
-                app:layout_constraintEnd_toStartOf="@+id/text_product_espresso"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/view__line_first" />
-
-            <TextView
-                android:id="@+id/text_product_espresso"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="32dp"
-                android:text="@string/espresso"
+            <Button
+                android:id="@+id/button_expresso"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@drawable/custom_button_preference_shape"
+                android:drawableStart="@drawable/ic_coffee_cup_espresso"
+                android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
+                android:paddingStart="32dp"
+                android:text="@string/expresso_tag_button"
                 android:textColor="@color/font_marron_claro"
-                android:textSize="20sp"
-                app:layout_constraintBottom_toBottomOf="@id/image_product_espresso"
-                app:layout_constraintStart_toEndOf="@+id/image_product_espresso"
-                app:layout_constraintTop_toBottomOf="@+id/view__line_first" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="12dp"
-                android:src="@drawable/ic_baseline_arrow_forward_ios_24"
-                app:layout_constraintBottom_toTopOf="@id/view_line_expresso"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/view__line_first"
-
-                />
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view__line_1" />
 
             <View
-                android:id="@+id/view_line_expresso"
+                android:id="@+id/view__line_2"
                 android:layout_width="0dp"
                 android:layout_height="4dp"
-                android:layout_marginTop="8dp"
                 android:background="@color/font_separation_bar"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/image_product_espresso" />
+                app:layout_constraintTop_toBottomOf="@id/button_expresso" />
 
-            <!-- =================================================================== !-->
-
-            <ImageView
-                android:id="@+id/image_product_cappuccino"
-                android:layout_width="72dp"
-                android:layout_height="72dp"
-                android:layout_marginStart="32dp"
-                android:layout_marginTop="32dp"
-                android:src="@drawable/ic_coffee_cup_cappuccino"
-                app:layout_constraintEnd_toStartOf="@+id/text_product_cappuccino"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/image_product_espresso" />
-
-            <TextView
-                android:id="@+id/text_product_cappuccino"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="32dp"
-                android:text="@string/cappuccino"
+            <Button
+                android:id="@+id/button_cappuccino"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@drawable/custom_button_preference_shape"
+                android:drawableStart="@drawable/ic_coffee_cup_cappuccino"
+                android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
+                android:paddingStart="32dp"
+                android:text="@string/cappuccino_tag_button"
                 android:textColor="@color/font_marron_claro"
-                android:textSize="20sp"
-                app:layout_constraintBottom_toBottomOf="@id/image_product_cappuccino"
-                app:layout_constraintStart_toEndOf="@+id/image_product_cappuccino"
-                app:layout_constraintTop_toTopOf="@id/image_product_cappuccino" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="12dp"
-                android:src="@drawable/ic_baseline_arrow_forward_ios_24"
-                app:layout_constraintBottom_toTopOf="@id/view_line_cappuccino"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/view_line_expresso"
-
-                />
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view__line_2" />
 
             <View
-                android:id="@+id/view_line_cappuccino"
+                android:id="@+id/view__line_3"
                 android:layout_width="0dp"
                 android:layout_height="4dp"
-                android:layout_marginTop="8dp"
                 android:background="@color/font_separation_bar"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/image_product_cappuccino" />
+                app:layout_constraintTop_toBottomOf="@id/button_cappuccino" />
 
-            <!-- =================================================================== !-->
-
-            <ImageView
-                android:id="@+id/image_product_macciato"
-                android:layout_width="72dp"
-                android:layout_height="72dp"
-                android:layout_marginStart="32dp"
-                android:layout_marginTop="32dp"
-                android:src="@drawable/ic_coffee_cup_macciato"
-                app:layout_constraintEnd_toStartOf="@+id/text_product_macciato"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/image_product_cappuccino" />
-
-            <TextView
-                android:id="@+id/text_product_macciato"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="32dp"
-                android:text="@string/macciato"
+            <Button
+                android:id="@+id/button_macciato"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@drawable/custom_button_preference_shape"
+                android:drawableStart="@drawable/ic_coffee_cup_macciato"
+                android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
+                android:paddingStart="32dp"
+                android:text="@string/macciato_tag_button"
                 android:textColor="@color/font_marron_claro"
-                android:textSize="20sp"
-                app:layout_constraintBottom_toBottomOf="@id/image_product_macciato"
-                app:layout_constraintStart_toEndOf="@+id/image_product_macciato"
-                app:layout_constraintTop_toTopOf="@id/image_product_macciato" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="12dp"
-                android:src="@drawable/ic_baseline_arrow_forward_ios_24"
-                app:layout_constraintBottom_toTopOf="@id/view_line_macciato"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/view_line_cappuccino"
-
-                />
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view__line_3" />
 
             <View
-                android:id="@+id/view_line_macciato"
+                android:id="@+id/view__line_4"
                 android:layout_width="0dp"
                 android:layout_height="4dp"
-                android:layout_marginTop="8dp"
                 android:background="@color/font_separation_bar"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/image_product_macciato" />
+                app:layout_constraintTop_toBottomOf="@id/button_macciato" />
 
-            <!-- =================================================================== !-->
-
-            <ImageView
-                android:id="@+id/image_product_mocha"
-                android:layout_width="72dp"
-                android:layout_height="72dp"
-                android:layout_marginStart="32dp"
-                android:layout_marginTop="32dp"
-                android:src="@drawable/ic_coffee_cup_mocha"
-                app:layout_constraintEnd_toStartOf="@+id/text_product_mocha"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/image_product_macciato" />
-
-            <TextView
-                android:id="@+id/text_product_mocha"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="32dp"
-                android:text="@string/mocha"
+            <Button
+                android:id="@+id/button_mocha"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@drawable/custom_button_preference_shape"
+                android:drawableStart="@drawable/ic_coffee_cup_mocha"
+                android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
+                android:paddingStart="32dp"
+                android:text="@string/moccha_tag_button"
                 android:textColor="@color/font_marron_claro"
-                android:textSize="20sp"
-                app:layout_constraintBottom_toBottomOf="@id/image_product_mocha"
-                app:layout_constraintStart_toEndOf="@+id/image_product_mocha"
-                app:layout_constraintTop_toTopOf="@id/image_product_mocha" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="12dp"
-                android:src="@drawable/ic_baseline_arrow_forward_ios_24"
-                app:layout_constraintBottom_toTopOf="@id/view_line_mocha"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/view_line_macciato"
-
-                />
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view__line_4" />
 
             <View
-                android:id="@+id/view_line_mocha"
+                android:id="@+id/view__line_5"
                 android:layout_width="0dp"
                 android:layout_height="4dp"
-                android:layout_marginTop="8dp"
                 android:background="@color/font_separation_bar"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/image_product_mocha" />
+                app:layout_constraintTop_toBottomOf="@id/button_mocha" />
 
-            <!-- =================================================================== !-->
-
-            <ImageView
-                android:id="@+id/image_product_latte"
-                android:layout_width="72dp"
-                android:layout_height="72dp"
-                android:layout_marginStart="32dp"
-                android:layout_marginTop="32dp"
-                android:src="@drawable/ic_coffee_cup_latte"
-                app:layout_constraintEnd_toStartOf="@+id/text_product_latte"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/image_product_mocha" />
-
-            <TextView
-                android:id="@+id/text_product_latte"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="32dp"
-                android:text="@string/latte"
+            <Button
+                android:id="@+id/button_latte"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@drawable/custom_button_preference_shape"
+                android:drawableStart="@drawable/ic_coffee_cup_latte"
+                android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
+                android:paddingStart="32dp"
+                android:text="@string/latte_tag_button"
                 android:textColor="@color/font_marron_claro"
-                android:textSize="20sp"
-                app:layout_constraintBottom_toBottomOf="@id/image_product_latte"
-                app:layout_constraintStart_toEndOf="@+id/image_product_latte"
-                app:layout_constraintTop_toTopOf="@id/image_product_latte" />
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view__line_5" />
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="12dp"
-                android:src="@drawable/ic_baseline_arrow_forward_ios_24"
-                app:layout_constraintBottom_toTopOf="@id/view_line_latte"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/view_line_mocha"
-
-                />
 
             <View
-                android:id="@+id/view_line_latte"
+                android:id="@+id/view__line_6"
                 android:layout_width="0dp"
                 android:layout_height="4dp"
-                android:layout_marginTop="8dp"
                 android:background="@color/font_separation_bar"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/image_product_latte" />
+                app:layout_constraintTop_toBottomOf="@id/button_latte" />
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
-
     </ScrollView>
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
 
 </FrameLayout>
