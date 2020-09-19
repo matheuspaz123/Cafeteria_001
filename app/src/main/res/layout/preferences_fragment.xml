@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui_button_navigation.PreferencesFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/view__line_1"
+                android:layout_width="0dp"
+                android:layout_height="4dp"
+                android:background="@color/font_separation_bar"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/button_expresso"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@drawable/custom_button_preference_shape"
+                android:drawableStart="@drawable/ic_coffee_cup_espresso"
+                android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
+                android:paddingStart="32dp"
+                android:text="@string/expresso_tag_button"
+                android:textColor="@color/font_marron_claro"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view__line_1" />
+
+            <View
+                android:id="@+id/view__line_2"
+                android:layout_width="0dp"
+                android:layout_height="4dp"
+                android:background="@color/font_separation_bar"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/button_expresso" />
+
+            <Button
+                android:id="@+id/button_cappuccino"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@drawable/custom_button_preference_shape"
+                android:drawableStart="@drawable/ic_coffee_cup_cappuccino"
+                android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
+                android:paddingStart="32dp"
+                android:text="@string/cappuccino_tag_button"
+                android:textColor="@color/font_marron_claro"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view__line_2" />
+
+            <View
+                android:id="@+id/view__line_3"
+                android:layout_width="0dp"
+                android:layout_height="4dp"
+                android:background="@color/font_separation_bar"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/button_cappuccino" />
+
+            <Button
+                android:id="@+id/button_macciato"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@drawable/custom_button_preference_shape"
+                android:drawableStart="@drawable/ic_coffee_cup_macciato"
+                android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
+                android:paddingStart="32dp"
+                android:text="@string/macciato_tag_button"
+                android:textColor="@color/font_marron_claro"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view__line_3" />
+
+            <View
+                android:id="@+id/view__line_4"
+                android:layout_width="0dp"
+                android:layout_height="4dp"
+                android:background="@color/font_separation_bar"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/button_macciato" />
+
+            <Button
+                android:id="@+id/button_mocha"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@drawable/custom_button_preference_shape"
+                android:drawableStart="@drawable/ic_coffee_cup_mocha"
+                android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
+                android:paddingStart="32dp"
+                android:text="@string/moccha_tag_button"
+                android:textColor="@color/font_marron_claro"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view__line_4" />
+
+            <View
+                android:id="@+id/view__line_5"
+                android:layout_width="0dp"
+                android:layout_height="4dp"
+                android:background="@color/font_separation_bar"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/button_mocha" />
+
+            <Button
+                android:id="@+id/button_latte"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@drawable/custom_button_preference_shape"
+                android:drawableStart="@drawable/ic_coffee_cup_latte"
+                android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
+                android:paddingStart="32dp"
+                android:text="@string/latte_tag_button"
+                android:textColor="@color/font_marron_claro"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view__line_5" />
+
+
+            <View
+                android:id="@+id/view__line_6"
+                android:layout_width="0dp"
+                android:layout_height="4dp"
+                android:background="@color/font_separation_bar"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/button_latte" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</FrameLayout>

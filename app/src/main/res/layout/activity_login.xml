@@ -4,64 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/marron_tela"
     tools:context=".view.LoginActivity">
 
-    <ImageView
-        android:id="@+id/coffee_shop"
+    <fragment
+        android:id="@+id/nav_host_login_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_marginBottom="200dp"
+        android:layout_height="0dp"
+        app:defaultNavHost="true"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/coffee_shop" />
-
-    <Button
-        android:id="@+id/button_sign_in"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/custom_button_white"
-        android:text="Login"
-        android:textColor="@color/font_marron_claro"
-        app:layout_constraintHorizontal_chainStyle="spread"
-        app:layout_constraintLeft_toRightOf="@+id/button_login"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/coffee_shop" />
-
-    <Button
-        android:id="@+id/button_login"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/custom_button_marron"
-        android:text="Registrar"
-        android:textColor="@color/font_white"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@+id/button_sign_in"
-        app:layout_constraintTop_toTopOf="@+id/button_sign_in" />
-
-    <ImageView
-        android:id="@+id/ic_google"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:src="@drawable/ic_google"
-        app:layout_constraintHorizontal_chainStyle="packed"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@+id/button_google"
-        app:layout_constraintTop_toTopOf="@+id/button_google" />
-
-    <Button
-        android:id="@+id/button_google"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/custom_button_google"
-        android:paddingHorizontal="32dp"
-        android:text="Entre com sua conta google"
-        android:textColor="@color/font_blue"
-        app:layout_constraintLeft_toRightOf="@+id/ic_google"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button_login" />
-
+        app:navGraph="@navigation/nav_login_graph" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

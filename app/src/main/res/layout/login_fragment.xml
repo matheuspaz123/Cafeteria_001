@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.LoginFragment">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/marron_tela">
+
+        <ImageView
+            android:id="@+id/coffee_shop"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="200dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/coffee_shop" />
+
+        <Button
+            android:id="@+id/button_sign_in"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_button_white"
+            android:text="@string/login"
+            android:textColor="@color/font_marron_claro"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintLeft_toRightOf="@+id/button_login"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/coffee_shop" />
+
+        <Button
+            android:id="@+id/button_login"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_button_marron"
+            android:text="@string/registrar"
+            android:textColor="@color/font_white"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/button_sign_in"
+            app:layout_constraintTop_toTopOf="@+id/button_sign_in" />
+
+        <ImageView
+            android:id="@+id/ic_google"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_google"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/button_google"
+            app:layout_constraintTop_toTopOf="@+id/button_google" />
+
+        <Button
+            android:id="@+id/button_google"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/custom_button_google"
+            android:paddingHorizontal="32dp"
+            android:text="@string/entre_com_sua_conta_google"
+            android:textColor="@color/font_blue"
+            app:layout_constraintLeft_toRightOf="@+id/ic_google"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/button_login" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
